@@ -25,3 +25,14 @@ pip install -r requirements.txt
 
 	**CPU version:** ~ 3.1 mins \
 	**CUDA version:** ~ 55 secs
+
+## About the college report
+The report source code and all the related files are present in `oba/` and `course_activity` respectively. The report is written in markdown and converted to pdf using pandoc, using the command:
+can be conveted into docx using (requires pandoc `sudo apt install pandoc -y`)
+```bash
+pandoc report.md -o report.docx
+```
+or can be converted into pdf using (requires texlive `sudo apt install texlive -y`)
+```bash
+pandoc report.md -o report.pdf
+```
