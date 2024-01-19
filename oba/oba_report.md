@@ -227,3 +227,58 @@ As for Amazon, they are using face recognition in their Amazon Go stores, which 
 
 In this way, Amazon is using face recognition and other AI technologies to revolutionize the retail experience. It's important to note that while Amazon Go uses a lot of AI, it's not entirely clear how much of the technology is based on face recognition, as Amazon has been quite secretive about the specifics of the technology they use.
 
+## Use of face recognition in the space of mobile phones
+
+Today's smartphones use face recognition extensively for applications like face unlock. While products like android use image based face recognation models primarily based on RGB values, iOS devices use a 3D face scanner with the use of a dot projector to ensure that the model will run anytime without much effect of the current ambient lighting. 
+
+## Running ML models within mobile devices 
+
+Machine learning models on mobile devices can operate in two main ways: on-device and on the cloud.
+
+1. **On-device:**
+   - **Pros:**
+     - Enhanced privacy: Data doesn't leave the device, addressing privacy concerns.
+     - Reduced latency: Inference occurs locally, minimizing communication delays.
+     - Functionality offline: The model can work even without an internet connection.
+
+   - **Cons:**
+     - Limited resources: Mobile devices have constraints in terms of processing power and memory, restricting model complexity.
+     - Limited training: On-device models might have limited training data compared to large cloud-based models.
+
+2. **On the cloud:**
+   - **Pros:**
+     - High computational power: Cloud servers can handle complex and resource-intensive models.
+     - Extensive training data: Access to vast datasets can improve model accuracy.
+
+   - **Cons:**
+     - Privacy concerns: Data is sent to the cloud for processing, raising potential privacy issues.
+     - Latency: Communication between the device and the cloud introduces latency, impacting real-time applications.
+     - Dependency on connectivity: Requires a stable internet connection for model execution.
+
+## Future of running face recognition models
+
+The future of machine learning models, especially in image recognition on mobile devices, involves advancements in on-device processing, the integration of specialized hardware like tensor cores, and continued collaboration with cloud services.
+
+1. **On-device Processing:**
+   - Future models are expected to be more optimized for on-device processing, utilizing hardware acceleration to run efficiently on mobile devices.
+   - Mobile processors with dedicated AI accelerators, such as tensor cores, will enhance the speed and efficiency of image recognition tasks.
+
+2. **Tensor Cores:**
+   - Tensor cores are specialized hardware components designed to accelerate tensor-based operations commonly used in deep learning models.
+   - They significantly speed up matrix multiplication, a fundamental operation in neural networks, making image recognition tasks faster and more energy-efficient on devices equipped with tensor cores.
+
+3. **Role of Cloud:**
+   - Cloud services will continue to play a crucial role in the development and deployment of machine learning models on mobile devices.
+   - While on-device processing provides benefits like privacy and offline functionality, cloud services can be used for training more complex models with large datasets.
+   - Cloud-based models can also be leveraged for tasks requiring extensive computational resources, with the results sent back to the device.
+
+4. **Edge-Cloud Integration:**
+   - A hybrid approach, combining on-device processing with cloud services, is likely to become more prevalent. This approach allows devices to offload certain tasks to the cloud while maintaining the advantages of local processing.
+   - Edge-Cloud integration ensures that devices can handle a variety of tasks efficiently, even those that might exceed the processing capabilities of the device alone.
+
+Overall, the future of machine learning models for image recognition on mobile devices will involve a balance between on-device capabilities, specialized hardware like tensor cores, and strategic utilization of cloud services for training and processing tasks that demand extensive resources.
+
+## References
+
+
+## Conclusion 
