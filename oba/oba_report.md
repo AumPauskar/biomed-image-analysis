@@ -1,9 +1,25 @@
 # Automatic Human Face Recognition and Segmentation
 
+## Table of contents
+| Section Number | Section Title |
+| --- | --- |
+| 1 | Introduction |
+| 2 | Technoogy used |
+| 3 | About the dataset |
+| 4 | Code - based on the lfw dataset |
+| 5 | Triplet loss functions |
+| 6 | CNN's |
+| 7 | Role of CUDA in hardware acceleration |
+| 8 | Applications of Face Recognition |
+| 9 | Use of face recognition in the space of mobile phones |
+| 10 | Running ML models within mobile devices |
+| 11 | Future of running face recognition models |
+| 12 | References |
+| 13 | Conclusion |
 ## Introduction
 Automatic human face recognition and segmentation is a very important task in computer vision. It has many applications in the real world, such as security, surveillance, and human-computer interaction. In this project, we will implement a face recognition and segmentation system using deep learning. 
 
-## Used technologies
+## Technology used
 * Python
 * TensorFlow
 * Keras
@@ -12,10 +28,10 @@ Automatic human face recognition and segmentation is a very important task in co
 * PIL (Python Imaging Library)
 * Jupyter Notebook (indicated by the use of `%matplotlib inline`, `%load_ext autoreload`, and `%autoreload 2` commands)
 
-## Used dataset
+## About the dataset
 For this project, we will use the LFW dataset. The LFW dataset is a collection of more than 13,000 images of faces collected from the web. Each face has been labeled with the name of the person pictured. 1680 of the people pictured have two or more distinct photos in the dataset. The only constraint on these faces is that they were detected by the Viola-Jones face detector. More details about the dataset can be found [here](http://vis-www.cs.umass.edu/lfw/).
 
-## Code
+## Code - based on the lfw dataset
 ```py
 # 1 - Importing libraries
 import tensorflow as tf
@@ -187,7 +203,7 @@ The code also includes a function for preprocessing the face images before they 
 
 The database of known face embeddings is simulated by storing the embeddings for a set of images in a Python dictionary. The keys in the dictionary are the names of the people, and the values are the corresponding embeddings.
 
-## Role of CUDA
+## Role of CUDA in hardware acceleration
 CUDA (Compute Unified Device Architecture) is a parallel computing platform and application programming interface (API) model created by NVIDIA. It allows software developers to use a CUDA-enabled graphics processing unit (GPU) for general purpose processing, which is known as GPGPU (General-Purpose computing on Graphics Processing Units).
 
 When it comes to accelerating Convolutional Neural Networks (CNNs) or any other deep learning models, CUDA plays a crucial role due to the following reasons:
@@ -279,6 +295,9 @@ The future of machine learning models, especially in image recognition on mobile
 Overall, the future of machine learning models for image recognition on mobile devices will involve a balance between on-device capabilities, specialized hardware like tensor cores, and strategic utilization of cloud services for training and processing tasks that demand extensive resources.
 
 ## References
-
+1. [Face recognition based on lfw dataset](https://www.kaggle.com/datasets/atulanandjha/lfwpeople)
+2. [Face recogition tech](https://aws.amazon.com/what-is/facial-recognition/)
+3. [CNN's](https://www.techtarget.com/searchenterpriseai/definition/convolutional-neural-network)
 
 ## Conclusion 
+In conclusion, the advancements in machine learning, particularly Convolutional Neural Networks (CNNs), have significantly improved face recognition systems. The use of CUDA technology has further accelerated these models, enabling real-time applications in various fields, from security to retail. Companies like Amazon are leveraging these technologies to revolutionize customer experiences, as seen in their Amazon Go stores. However, as face recognition technology becomes more prevalent, it's crucial to address the associated ethical and privacy concerns.
